@@ -27,14 +27,47 @@
             class="text-light ms-auto fa-solid fa-circle-chevron-left fs-2"
           ></i
         ></a>
-        <a href="/" class="text-decoration-none"
-          ><span class="text-light navbar-brand mb-0 h1 mx-auto"
-            >Bebekamın's</span
-          ></a
-        >
-
+        <a href="/" class="text-decoration-none mx-auto"
+          ><span class="text-light navbar-brand">Bebekamın's</span></a
         >
       </div>
     </nav>
+
+    <div class="container mx-auto row">
+      <form method="POST" action="/photos" class="col-10 offset-2 m-5">
+        <div class="mb-3">
+          <label for="exampleInputtitle" class="form-label">Title</label>
+          <input
+            name="title"
+            type="text"
+            class="form-control"
+            id="exampleInputtitle"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Description</label
+          >
+          <textarea
+            class="form-control"
+            name="description"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="formFileSm" class="form-label"
+            >Small file input example</label
+          >
+          <input
+            class="form-control form-control-sm"
+            id="formFileSm"
+            type="file"
+          />
+        </div>
+        <button type="submit" class="float-end btn btn-primary">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
